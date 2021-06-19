@@ -8,7 +8,7 @@ import javafx.scene.control.ChoiceBox;
 
 import java.io.IOException;
 
-public class Select {
+public class Select extends Main{
 
     @FXML
     public ChoiceBox<String> select = new ChoiceBox<>();
