@@ -6,8 +6,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
-
 import java.io.IOException;
+
+
 public class LogIn extends Main {
 
     public LogIn() {
