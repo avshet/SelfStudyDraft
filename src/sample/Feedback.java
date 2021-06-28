@@ -23,7 +23,7 @@ public class Feedback {
     @FXML
     void newbill(ActionEvent event) throws IOException {
         Main m = new Main();
-        m.changeScene("select.fxml");
+        m.changeScene("selectshop.fxml");
     }
 
 }

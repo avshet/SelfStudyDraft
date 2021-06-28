@@ -11,9 +11,8 @@ import java.io.IOException;
 
 public class LogIn extends Main {
 
-    public LogIn() {
-
-    }
+    public static String usern =" ";
+    public static String passw =" ";
 
     @FXML
     private Button button;
@@ -25,6 +24,14 @@ public class LogIn extends Main {
     private PasswordField password;
     @FXML
     private CheckBox box;
+    @FXML
+    private Button newacc;
+
+    @FXML
+    void newlogin(ActionEvent event) throws IOException {
+        LogIn m =  new LogIn();
+        m.changeScene("select.fxml",519,317);
+    }
 
 
     public void userLogIn(ActionEvent event) throws IOException {
@@ -34,11 +41,11 @@ public class LogIn extends Main {
     private void checkLogin() throws IOException {
         try {
             LogIn m = new LogIn();
-
-            if (username.getText().toString().equals("billing") && password.getText().toString().equals("123") ) {
+            System.out.println(usern+" "+passw);
+            if (username.getText().toString().equals(usern) && password.getText().toString().equals(passw) ) {
                 if(box.isSelected()) {
                     wrongLogIn.setText("Success!");
-                    m.changeScene("select.fxml", 140, 160);
+                    m.changeScene("selectshop.fxml", 140, 160);
                 }
                 else
                     wrongLogIn.setText("Please select the checkBox");

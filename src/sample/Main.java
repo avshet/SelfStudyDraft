@@ -11,13 +11,13 @@ import java.io.IOException;
 public class Main extends Application {
 
     public static Stage stg;
-    Select s = new Select();
+   //bilSelect s = new Select();
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         stg = primaryStage;
         primaryStage.setTitle("JavaFX Billing System");
-        primaryStage.setResizable(false);
+        primaryStage.setResizable(true);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setScene(new Scene(root, 623, 434));
         primaryStage.show();

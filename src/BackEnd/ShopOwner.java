@@ -34,13 +34,14 @@ public class ShopOwner implements shop {
                 ((shopD) sh).show();
             }
             case 5 -> {
-                System.out.println("amount is"+amount);
+                System.out.println("amount is" + amount);
             }
         }
         return amount;
     }
+}
 
-    static class shopA extends ShopOwner {
+    class shopA extends ShopOwner {
         void show() {
             double aprice = 10, bprice = 20, cprice = 30, dprice = 40;
             System.out.println("Please select item to order\n1. A-10rs\n2. B 20rs\n3. C 30rs\n4. D 40rs");
@@ -78,8 +79,7 @@ public class ShopOwner implements shop {
             }
         }
     }
-
-    static class shopB extends ShopOwner {
+class shopB extends ShopOwner {
         void show() {
             int aprice = 10, bprice = 20, cprice = 30, dprice = 40;
             System.out.println("Please select item to order\n1. A-10rs\n2. B 20rs\n3. C 30rs\n4. D 40rs");
@@ -118,7 +118,7 @@ public class ShopOwner implements shop {
         }
     }
 
-        static class shopC extends ShopOwner {
+    class shopC extends ShopOwner {
             void show() {
                 int aprice = 10, bprice = 20, cprice = 30, dprice = 40;
                 System.out.println("Please select item to order\n1. A-10rs\n2. B 20rs\n3. C 30rs\n4. D 40rs");
@@ -157,7 +157,7 @@ public class ShopOwner implements shop {
             }
         }
 
-            static class shopD extends ShopOwner {
+        class shopD extends ShopOwner {
                 void show() {
                     int aprice = 10, bprice = 20, cprice = 30, dprice = 40;
                     System.out.println("Please select item to order\n1. A-10rs\n2. B 20rs\n3. C 30rs\n4. D 40rs");
@@ -195,7 +195,7 @@ public class ShopOwner implements shop {
                     }
                 }
             }
-        }
+
 
 
 

@@ -12,35 +12,36 @@
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LogIn">
-   <bottom>
-      <AnchorPane prefHeight="439.0" prefWidth="623.0" style="-fx-background-color: grey; -fx-border-color: orange; -fx-border-width: 10;" BorderPane.alignment="CENTER">
+   <center>
+      <AnchorPane prefHeight="439.0" prefWidth="623.0" style="-fx-background-color: light grey; -fx-border-color: orange; -fx-border-width: 10;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="14.0" layoutY="142.0" text="Username" textFill="#ffc900">
+            <Label layoutX="25.0" layoutY="142.0" text="Username" textFill="#625833">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="16.0" layoutY="213.0" text="Password" textFill="#ffc900">
+            <Label layoutX="25.0" layoutY="191.0" text="Password" textFill="#433d29">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
             <TextField fx:id="username" layoutX="129.0" layoutY="144.0" promptText="Username" />
-            <PasswordField fx:id="password" layoutX="129.0" layoutY="215.0" promptText="Password" />
+            <PasswordField fx:id="password" layoutX="129.0" layoutY="193.0" promptText="Password" />
             <Button fx:id="button" layoutX="129.0" layoutY="298.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #ffc900;" text="Log In" />
             <Label fx:id="wrongLogIn" layoutX="153.0" layoutY="127.0" textFill="RED" />
-            <ImageView fitHeight="117.0" fitWidth="284.0" layoutX="300.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="203.0" fitWidth="305.0" layoutX="300.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../IMG/javafx.png" />
                </image>
             </ImageView>
-            <Label layoutX="93.0" layoutY="28.0" text="JAVAFX BILLING SYSTEM" textFill="#ddc893">
+            <Label layoutX="115.0" layoutY="30.0" prefHeight="59.0" prefWidth="393.0" text="JAVAFX BILLING SYSTEM" textFill="#4c2222">
                <font>
-                  <Font name="System Bold" size="36.0" />
+                  <Font name="Bodoni MT Condensed Bold" size="48.0" />
                </font>
             </Label>
-            <CheckBox fx:id="box" layoutX="129.0" layoutY="259.0" mnemonicParsing="false" text="I am not a Robot" />
+            <CheckBox fx:id="box" layoutX="129.0" layoutY="229.0" mnemonicParsing="false" text="I am not a Robot" />
+            <Button fx:id="newacc" layoutX="129.0" layoutY="256.0" mnemonicParsing="false" onAction="#newlogin" opacity="0.6" prefHeight="25.0" prefWidth="126.0" text="Create new account" textFill="#6b4b4b" wrapText="true" />
          </children>
       </AnchorPane>
-   </bottom>
+   </center>
 </BorderPane>
