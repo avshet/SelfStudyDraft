@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewLogIn">
+   <top>
+      <AnchorPane prefHeight="251.0" prefWidth="474.0" style="-fx-background-color: light grey; -fx-border-color: orange; -fx-border-width: 10;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="89.0" layoutY="84.0" text="Username" textFill="#625833">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="133.0" text="Password" textFill="#433d29">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="210.0" layoutY="86.0" promptText="Create a Username" />
+            <PasswordField fx:id="password" layoutX="210.0" layoutY="135.0" promptText="Create a Password" />
+            <Button fx:id="newAc" layoutX="204.0" layoutY="191.0" mnemonicParsing="false" onAction="#createacc" prefHeight="33.0" prefWidth="97.0" style="-fx-background-color: #ffc900;" text="Create Account" />
+            <Label layoutX="65.0" layoutY="14.0" prefHeight="59.0" prefWidth="343.0" text="CREATE NEW ACCOUNT" textFill="#4c2222">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="48.0" />
+               </font>
+            </Label>
+            <Button fx:id="login" layoutX="318.0" layoutY="195.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: orange;" text="Log In" />
+            <Label fx:id="wronglogin" layoutX="228.0" layoutY="174.0" prefHeight="17.0" prefWidth="147.0" textFill="#eb6b6b" />
+            <Label fx:id="msg" layoutX="210.0" layoutY="165.0" prefHeight="17.0" prefWidth="149.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
