@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="167.0" prefWidth="135.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SelectShop">
+<AnchorPane prefHeight="160.0" prefWidth="140.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SelectShop">
     <children>
         <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you need reciept" />
         <ChoiceBox fx:id="select" layoutX="25.0" layoutY="71.0" prefHeight="25.0" prefWidth="86.0" />

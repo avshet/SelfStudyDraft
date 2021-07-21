@@ -9,21 +9,21 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="10" prefHeight="306.0" prefWidth="517.0" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SelectFood">
+<GridPane alignment="center" hgap="10" prefHeight="338.0" prefWidth="565.0" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SelectFood">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
    </rowConstraints>
-   <AnchorPane prefHeight="291.0" prefWidth="463.0" style="-fx-border-width: 10; -fx-border-color: ORANGE; -fx-background-color: light grey;">
-      <Label layoutX="56.0" layoutY="37.0" style="-fx-background-color: GREU;" text="SELECT FOOD ITEMS-">
+   <AnchorPane prefHeight="301.0" prefWidth="565.0" style="-fx-border-width: 10; -fx-border-color: ORANGE; -fx-background-color: light grey;">
+      <Label layoutX="43.0" layoutY="37.0" prefHeight="31.0" prefWidth="217.0" style="-fx-background-color: GREU;" text="SELECT FOOD ITEMS-">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
       </Label>
       <Label layoutX="356.0" layoutY="302.0" prefHeight="17.0" prefWidth="189.0" />
-      <Label fx:id="shopshow" layoutX="277.0" layoutY="37.0" prefHeight="31.0" prefWidth="125.0">
+      <Label fx:id="shopshow" layoutX="276.0" layoutY="30.0" prefHeight="46.0" prefWidth="245.0">
          <font>
             <Font name="Bernard MT Condensed" size="21.0" />
          </font>
@@ -39,22 +39,22 @@
             <Font name="Bernard MT Condensed" size="14.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="241.0" layoutY="112.0" prefHeight="25.0" prefWidth="91.0" text="ITEM C (Rs 30/-)">
+      <Label alignment="CENTER" layoutX="195.0" layoutY="114.0" prefHeight="25.0" prefWidth="91.0" text="ITEM C (Rs 30/-)">
          <font>
             <Font name="Bernard MT Condensed" size="14.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="241.0" layoutY="152.0" prefHeight="25.0" prefWidth="91.0" text="ITEM D (Rs 40/-)">
+      <Label alignment="CENTER" layoutX="196.0" layoutY="152.0" prefHeight="25.0" prefWidth="91.0" text="ITEM D (Rs 40/-)">
          <font>
             <Font name="Bernard MT Condensed" size="14.0" />
          </font>
       </Label>
-      <CheckBox fx:id="C12" layoutX="340.0" layoutY="118.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" />
-      <CheckBox fx:id="C14" layoutX="340.0" layoutY="156.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" />
-      <CheckBox fx:id="C13" layoutX="141.0" layoutY="156.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" />
-      <Button fx:id="ADD" layoutX="257.0" layoutY="215.0" mnemonicParsing="false" onAction="#ADDCART" prefHeight="25.0" prefWidth="125.0" text="ADD" />
-      <Button fx:id="pay" layoutX="265.0" layoutY="254.0" mnemonicParsing="false" onAction="#payment" prefHeight="25.0" prefWidth="81.0" text="pay" />
-      <Label fx:id="cart" alignment="CENTER" layoutX="399.0" layoutY="127.0" prefHeight="43.0" prefWidth="143.0" style="-fx-background-color: yellow; -fx-border-color: red;">
+      <CheckBox fx:id="C12" layoutX="141.0" layoutY="156.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" />
+      <CheckBox fx:id="C14" layoutX="305.0" layoutY="156.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" />
+      <CheckBox fx:id="C13" layoutX="305.0" layoutY="118.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" />
+      <Button fx:id="ADD" layoutX="63.0" layoutY="237.0" mnemonicParsing="false" onAction="#ADDCART" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: YELLOw; -fx-border-color: orange;" text="ADD TO CART" />
+      <Button fx:id="pay" layoutX="242.0" layoutY="237.0" mnemonicParsing="false" onAction="#payment" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: ORANGE;" text="PROCEED TO CHECKOUT" />
+      <Label fx:id="cart" alignment="CENTER" layoutX="356.0" layoutY="107.0" prefHeight="90.0" prefWidth="189.0" style="-fx-background-color: yellow; -fx-border-color: red;">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font></Label>

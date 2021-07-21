@@ -35,7 +35,7 @@ public class NewLogIn {
     @FXML
     void login(ActionEvent event) throws IOException {
         if(LogIn.usern.equals(username.getText()))
-            m.changeScene("sample.fxml",623, 434);
+            m.changeScene("sample.fxml",600, 350);
     }
 
     @FXML

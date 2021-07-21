@@ -1,6 +1,7 @@
 package sample;
 
 import BackEnd.Login;
+import BackEnd.ShopOwner;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -34,7 +35,7 @@ public class SelectFood {
 
     @FXML
     private Label cart;
-
+    public static ShopOwner sh;
 
     @FXML
     private void initialize(){
@@ -43,16 +44,30 @@ public class SelectFood {
     }
     @FXML
     void ADDCART(ActionEvent event) throws IOException {
-        if(C11.isSelected()&&C12.isSelected()&&C13.isSelected()&&C14.isSelected())
-            amount = amount + 100;
-
-        cart.setText("Cart value is "+amount);
+        if(C11.isSelected()){
+            sh.AddItems("itemA",10.0);
+        }
+        if(C12.isSelected()){
+            sh.AddItems("itemA",20.0);
+        }
+        if(C13.isSelected()){
+            sh.AddItems("itemA",30.0);
+        }
+        if(C14.isSelected()){
+            sh.AddItems("itemA",40.0);
+        }
+        C11.setSelected(false);
+        C12.setSelected(false);
+        C13.setSelected(false);
+        C14.setSelected(false);
+        cart.setText("Cart value is "+sh.showlist());
     }
 
     @FXML
     void payment(ActionEvent event) throws IOException {
-        Main m = new Main();
-        m.changeScene("feedback.fxml");
+        sh.GenerateBill();
+        LogIn m = new LogIn();
+        m.changeScene("feedback.fxml",600,400);
     }
 
 }

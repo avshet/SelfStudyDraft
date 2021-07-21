@@ -30,7 +30,7 @@ public class LogIn extends Main {
     @FXML
     void newlogin(ActionEvent event) throws IOException {
         LogIn m =  new LogIn();
-        m.changeScene("select.fxml",519,317);
+        m.changeScene("NewLogin.fxml",474,246);
     }
 
 

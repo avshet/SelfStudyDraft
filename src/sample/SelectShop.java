@@ -1,6 +1,7 @@
 package sample;
 
-import BackEnd.ShopOwner;
+import BackEnd.*;
+import BackEnd.shopA;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,21 +33,25 @@ public class SelectShop extends Main{
         ShopOwner sh = new ShopOwner();
         if(select.getValue().equals("SHOPA")) {
             SelectShop.shop = "SHOP-A";
-            m.changeScene("selectfood.fxml", 575, 370);
+            SelectFood.sh = new shopA();
+            Feedback.shopselect =1;
         }
         else if(select.getValue().equals("SHOPB")) {
             SelectShop.shop = "SHOP-B";
-            m.changeScene("selectfood.fxml", 575, 370);
+            SelectFood.sh = new shopB();
+            Feedback.shopselect =2;
         }
         else if(select.getValue().equals("SHOPC")) {
             SelectShop.shop = "SHOP-C";
-            m.changeScene("selectfood.fxml", 575, 370);
+            SelectFood.sh = new shopC();
+            Feedback.shopselect =3;
         }
         else{
             SelectShop.shop = "SHOP-D";
-            m.changeScene("selectfood.fxml", 575, 370);
+            SelectFood.sh = new shopD();
+            Feedback.shopselect =4;
         }
-
+        m.changeScene("selectfood.fxml", 565, 338);
     }
 
     public void changeScene(String fxml, int breadth, int height) throws IOException {

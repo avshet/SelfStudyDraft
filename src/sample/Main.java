@@ -25,7 +25,7 @@ public class Main extends Application {
         primaryStage.setTitle("JavaFX Billing System");
         primaryStage.setResizable(true);
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setScene(new Scene(root, 623, 434));
+        primaryStage.setScene(new Scene(root, 600, 350));
         primaryStage.show();
     }
 
