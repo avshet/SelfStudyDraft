@@ -13,6 +13,12 @@ public class Main extends Application {
     public static Stage stg;
    //bilSelect s = new Select();
 
+
+    @Override
+    public void init() throws Exception {
+        super.init();
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         stg = primaryStage;
@@ -28,7 +34,10 @@ public class Main extends Application {
         stg.getScene().setRoot(pane);
     }
 
-
+    @Override
+    public void stop() throws Exception {
+        super.stop();
+    }
 
     public static void main(String[] args) {
         launch(args);
